@@ -1,0 +1,78 @@
+.cards-movie,
+.cards-tv {
+  display: flex;
+  // margin-top: 2rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__card {
+    position: relative;
+    margin: 2rem;
+    width: 25rem;
+    height: 35rem;
+    flex: 0 0 auto;
+
+    &--img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(#000000, 0.9);
+
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      // justify-content: center;
+      // align-items: center;
+      overflow: auto;
+
+      visibility: hidden;
+
+      .title {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $color-primary;
+      }
+
+      .description {
+        margin: 1rem 0;
+        font-size: 1.4rem;
+      }
+
+      .date {
+        font-size: 1.2rem;
+        font-style: italic;
+        text-align: right;
+      }
+
+      &--btn {
+        color: $bg-color-dark;
+        font-weight: 600;
+        font-size: 1.5rem;
+        font-family: inherit;
+        text-decoration: none;
+        background: $color-primary;
+        padding: 0.75rem 2rem;
+        border-radius: 5rem;
+      }
+    }
+
+    &:hover &--hover {
+      cursor: pointer;
+      visibility: visible;
+    }
+  }
+}

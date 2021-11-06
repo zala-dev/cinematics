@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icon -->
+    <link
+      rel="icon"
+      href="./src/images/cinematics-icon.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <!-- JS -->
+    <script src="/src/js/controller.js" defer></script>
+    <title>Cinematics || Trending Movies & TV Shows</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="heading-1">Cinematics</h1>
+        <!-- <form class="search">
+          <input
+            class="search__input"
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search here..."
+          />
+        </form> -->
+        <!-- <nav class="header__nav">
+          <ul class="header__nav--list">
+            <li class="header__nav--item">Movies</li>
+            <li class="header__nav--item">TV</li>
+            <li class="header__nav--item">Trending</li>
+          </ul>
+        </nav> -->
+      </header>
+      <!-- Section Trending -->
+      <section class="trending">
+        <h2 class="heading-2">Trending</h2>
+
+        <h3 class="heading-3">Movies</h3>
+        <div class="cards-movie">
+          <!-- <div class="cards__card">
+        <img
+          src="${item.moviePoster}"
+          class="cards__card--img"
+        />
+        <div class="cards__card--hover" >
+          <p class='title'>${item.movieName}<p/>
+          <p class='description'>${item.movieOverview}<p/>
+          <p class='date'> ${item.movieReleaseDate}<p/>  
+        </div>
+      </div>-->
+        </div>
+        <h3 class="heading-3">TV Shows</h3>
+        <div class="cards-tv">
+          <!-- <div class="cards__card">
+          <img
+            src="${item.tvPoster}"
+            class="cards__card--img"
+          />
+          <div class="cards__card--hover" >
+            <p class='description'>${item.tvOverview}<p/>
+          </div>
+        </div> -->
+        </div>
+      </section>
+      <!-- <div class="pagination-container">
+        <button class="btn btn__prev"></button>
+        <button class="btn btn__next"></button>
+      </div> -->
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div id="popup" class="popup-window hidden">
+      <!-- <div class="close">&times;</div>
+      <h2 class="heading-2">Movie Title</h2>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore velit
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab numquam et
+        eos, voluptatem sit ratione voluptates nemo voluptas sint dolorum. error
+        sapiente atque quos aspernatur.
+      </p>
+      <p class="text-secondary">Release Date</p> -->
+    </div>
+  </body>
+</html>

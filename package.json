@@ -1,0 +1,18 @@
+{
+  "name": "cinematics",
+  "version": "1.0.0",
+  "description": "trending movies and tv shows",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "Bhagirath Zala",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.38.2"
+  }
+}
